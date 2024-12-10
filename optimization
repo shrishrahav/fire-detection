@@ -1,0 +1,4 @@
+import tensorflow_model_optimization as tfmot
+
+prune_low_magnitude = tfmot.sparsity.keras.prune_low_magnitude
+pruned_model = prune_low_magnitude(model)
